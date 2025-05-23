@@ -1,0 +1,247 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Seção de introdução */
+.intro {
+    background-color: #e86b1f;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.intro-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.intro-container p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.intro .btn {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #1c1c1c;
+}
+
+/* Formulários */
+.form-cadastro {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1c1c1c;
+    outline: none;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Botões */
+.btn {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e86b1f;
+}
+
+.cancel {
+    background-color: #ccc;
+}
+
+.cancel:hover {
+    background-color: #999;
+}
+
+/* Seção de serviços */
+.servicos {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1c1c1c;
+}
+
+.servicos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.servico {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servico img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.servico h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Seção de contato */
+.contato {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contato .btn {
+    background-color: #e86b1f;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contato .btn:hover {
+    background-color: #cc5a18;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .intro-container h2 {
+        font-size: 30px;
+    }
+
+    .intro-container p {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
